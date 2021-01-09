@@ -5,6 +5,10 @@
 @import 'global';
 
 .header{
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   padding-bottom: 68px;
   &__top{
     padding-top: 31px;
@@ -22,6 +26,7 @@
     max-width: 803px;
   }
   &__text{
+    max-width: 563px;
     margin-bottom: 50px;
     line-height: 36px;
     color: $default;
@@ -135,6 +140,10 @@
 .portfolio{
   &__inner{
     padding-top: 50px;
+    margin-bottom: 124px;
+  }
+  &__item{
+    margin-bottom: 100px;
   }
   &__item-title{
     font-size: 32px;
@@ -157,15 +166,121 @@
     }
   }
   &__item-slider-images{
-    max-width: 772px;
+    max-width: 774px;
     margin: 0 auto;
   }
   &__item-slider-img{
-    max-width: 772px;
-    height: 667px;
+    padding: 0 3px;
+    max-width: 774px;
+    height: 668px;
     object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
+
+.slick-arrow{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &:focus{
+    outline: none;
+    transition: all .3s;
+    transform: scale(0.9) translateY(-50%);
+  }
+  &:active{
+    animation: click .3s linear;
+  }
+}
+
+.slick-next{
+  right: -100px;
+}
+
+.slick-prev{
+  left: -100px;
+}
+
+.studio{
+  &__inner{
+    padding: 80px 50px 0;
+    margin-bottom: 124px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img{
+    max-width: 278px;
+    object-fit: cover;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.34);
+  }
+}
+
+.price{
+  &__inner{
+    padding-top: 80px;
+    margin-bottom: 124px;
+  }
+  &__item{
+    background-color: #144778;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.34);
+    text-align: center;
+    padding: 28px 25px;
+    width: 328px;
+  }
+  &__item-title,
+  &__item-price{
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+  &__item-title{
+    font-size: 24px;
+    margin-bottom: 25px;
+    @extend %montserrat-500;
+  }
+  &__item-price{
+    @extend %montserrat-600;
+    margin-bottom: 35px;
+  }
+  &__item-line{
+    margin-bottom: 35px;
+    max-width: 277px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    filter: blur(2px);  
+  }
+  &__list-item{
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    @extend %montserrat-600;
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 70px;
+    }
+  }
+  &__list-item--hours{
+    @extend %montserrat-500;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  &__item-link{
+    display: inline-block;
+    padding: 21px 64px;
+    font-size: 16px;
+    line-height: 1;
+    color: $btn;
+    @extend %montserrat-600;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all .3s;
+    outline: none;
+  }
+}
+
+
 
 
 
