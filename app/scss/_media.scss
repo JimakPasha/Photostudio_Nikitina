@@ -1,0 +1,48 @@
+@media (max-width: 1090px){
+  .menu{
+    &__btn{
+      width: 30px;
+      height: 24px;
+      border: none;
+      background-color: transparent;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      z-index: 10;
+      &::after,
+      &::before,
+      span{
+        width: 100%;
+        height: 2px;
+        background-color: $default;
+      }
+      &::before,
+      &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+      }
+      &::before{
+        top: 0;
+      }
+      &::after{
+        bottom: 0;
+      }
+    }
+    &__list{
+      text-align: center;
+      width: 100%;
+      padding-top: 130px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      flex-direction: column;
+      background-color: $btn;
+      z-index: 5;
+    }
+    &__list-item + .menu__list-item{
+      margin-left: 0;
+    }
+  }
+}
