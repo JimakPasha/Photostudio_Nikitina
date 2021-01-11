@@ -108,6 +108,17 @@
       margin-left: 20px;
     }
   }
+  .reviews{
+    &__item +.reviews__item{
+      margin-left: 20px;
+    }
+  }
+  .form-box{
+    &__img{
+      height: auto;
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 992px){
@@ -122,6 +133,25 @@
   .studio{
     &__inner{
       padding: 80px 0px 0;
+    }
+  }
+  .contacts{
+    &__content{
+      margin-right: 30px;
+      font-size: 24px;
+      line-height: 42px;
+    }
+  }
+  .map iframe{
+    width: 400px;
+    height: 400px;
+  }
+  .phone{
+    line-height: 48px;
+  }
+  .footer{
+    &__inner{
+      padding: 70px 0;
     }
   }
 }
@@ -151,6 +181,19 @@
     }
     &__img{
       margin-bottom: 20px;
+    }
+  }
+  .footer{
+    &__inner{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__links{
+      margin: 0 85px;
+    }
+    &__logo{
+      order: 1;
+      margin-top: 70px;
     }
   }
 }
@@ -230,7 +273,113 @@
       margin-left: 0px;
     }
     &__item{
+      margin-bottom: 35px;
+    }
+  }
+  .reviews{
+    &__inner{
+      padding-top: 35px;
+      margin-bottom: 80px;
+    }
+  }
+  .form-box{
+    &__inner{
+      margin-bottom: 80px;
+    }
+    &__img-wrapper{
+      display: none;
+    }
+  }
+  .form{
+    &__title{
+      text-align: center;
+      font-size: 35px;
+      line-height: 44px;
+      margin-bottom: 48px;
+    }
+  }
+  .contacts{
+    &__inner{
+      padding-top: 35px;
+      margin-bottom: 60px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__content{
+      margin-right: 0;
       margin-bottom: 20px;
+    }
+  }
+  .address {
+    margin-bottom: 20px;
+  }
+  .footer{
+    &__title{
+      padding-right: 25px;
+      font-size: 28px;
+      margin-bottom: 20px;
+      position: relative;
+      cursor: pointer;
+      &::after,
+      &::before{
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 2px;
+        background-color: $btn;
+        top: 50%;
+        transition: all .3s;
+      }
+      &::before{
+        left: 90%;
+        transform: rotate(-45deg);
+      }
+      &::after{
+        right: 7%;
+        transform: rotate(45deg);
+      }
+    }
+    &__title.active::before{
+      transform: rotate(45deg);
+    }
+    &__title.active::after{
+      transform: rotate(-45deg);
+    }
+    &__inner{
+      padding: 40px 0 30px;
+    }
+    &__social-item-link,
+    &__links-item-link{
+      font-size: 20px;
+    }
+    &__social-list,
+    &__links-list{
+      display: none;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 620px){
+  .reviews{
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item +.reviews__item{
+      margin-left: 0px;
+    }
+    &__item{
+      margin-bottom: 20px;
+    }
+  }
+  .footer{
+    &__links{
+      margin: 0 30px 0 0;
+    }
+    &__logo{
+      margin-left: -30px;
     }
   }
 }
@@ -297,9 +446,71 @@
       padding-top: 25px;
       margin-bottom: 40px;
     }
-    &__item{
-      padding: 23px 18px;
-      width: 300px;
+    &__item-title,
+    &__item-price{
+      font-size: 22px;
+    }
+  }
+  .reviews{
+    &__inner{
+      padding-top: 25px;
+      margin-bottom: 40px;
+    }
+  }
+  .form-box{
+    &__inner{
+      margin-bottom: 40px;
+    }
+  }
+  .form{
+    &__btn{
+      padding: 20px 0;
+      font-size: 24px;
+    }
+    &__input{
+      padding: 20px;
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+    &__input--phone{
+      margin-bottom: 40px;
+    }
+    &__title{
+      font-size: 28px;
+      line-height: 39px;
+      margin-bottom: 28px;
+    }
+    &__description{
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .contacts{
+    &__content{
+      font-size: 20px;
+    }
+    &__inner{
+      padding-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  .address{
+    font-size: 17px;
+  }
+  .map iframe{
+    width: 300px;
+    height: 300px;
+  }
+  .footer{
+    &__inner{
+      padding: 35px 0 20px;
+    }
+    &__title{
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    &__logo{
+      margin-top: 30px;
     }
   }
 }
@@ -311,6 +522,18 @@
     }
     &__social-link+.header__social-link {
       margin-left: 40px;
+    }
+  }
+  .price{
+    &__item{
+      width: 290px;
+      padding: 21px 18px;
+    }
+  }
+  .reviews{
+    &__item{
+      width: 290px;
+      padding: 21px 18px;
     }
   }
 }

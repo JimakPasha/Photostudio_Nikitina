@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.footer__title').click(function (event) {
+    $(this).toggleClass('active').next().slideToggle(300);
+  });
+
   $('.menu__btn').on('click', function (){
     $('.menu__list,.menu__btn,.header__content').toggleClass('active');
   });
