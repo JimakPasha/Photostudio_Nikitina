@@ -1,0 +1,59 @@
+$default: rgba(255,255,255,0.8);
+$btn: #121E2C;
+
+%montserrat-200{
+  font-family: 'Montserrat-ExtraLight', sans-serif;
+  font-weight: 200;
+}
+
+%montserrat-300{
+  font-family: 'Montserrat-Light', sans-serif;
+  font-weight: 300;
+}
+
+%montserrat-400{
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%montserrat-500{
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%montserrat-600{
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%montserrat-900{
+  font-family: 'Montserrat-Black', sans-serif;
+  font-weight: 900;
+}
+
+%btn{
+  line-height: 1;
+  @extend %montserrat-600;
+  color: $btn;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px #fff;
+  outline: none;
+  transition: all .3s;
+  &:hover,
+  &:focus{
+    box-shadow: 0px 0px 40px 0px #fff;
+  }
+}
+
+@keyframes click{
+  0%{
+    transform: scale(1) translateY(-50%);
+  }
+  50%{
+    transform: scale(0.9) translateY(-50%);
+  }
+  100%{
+    transform: scale(1) translateY(-50%);
+  }
+}
