@@ -103,6 +103,11 @@
       height: auto;
     }
   }
+  .price{
+    &__item +.price__item{
+      margin-left: 20px;
+    }
+  }
 }
 
 @media (max-width: 992px){
@@ -112,6 +117,11 @@
     }
     &__line{
       display: none;
+    }
+  }
+  .studio{
+    &__inner{
+      padding: 80px 0px 0;
     }
   }
 }
@@ -132,6 +142,15 @@
     }
     &__img-box{
       margin-right: 35px;
+    }
+  }
+  .studio{
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__img{
+      margin-bottom: 20px;
     }
   }
 }
@@ -183,7 +202,7 @@
   .portfolio{
     &__inner{
       padding-top: 35px;
-      margin-bottom: 100px;
+      margin-bottom: 80px;
     }
     &__item-title{
       font-size: 28px;
@@ -192,6 +211,26 @@
     }
     &__item{
       margin-bottom: 65px;
+    }
+  }
+  .studio{
+    &__inner{
+      padding: 35px 0 0;
+      margin-bottom: 80px;
+    }
+  }
+  .price{
+    &__inner{
+      padding-top: 35px;
+      margin-bottom: 80px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item +.price__item{
+      margin-left: 0px;
+    }
+    &__item{
+      margin-bottom: 20px;
     }
   }
 }
@@ -236,7 +275,7 @@
   .portfolio{
     &__inner{
       padding-top: 25px;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
     &__item-title{
       font-size: 22px;
@@ -245,6 +284,22 @@
     }
     &__item{
       margin-bottom: 35px;
+    }
+  }
+  .studio{
+    &__inner{
+      padding: 25px 0 0;
+      margin-bottom: 40px;
+    }
+  }
+  .price{
+    &__inner{
+      padding-top: 25px;
+      margin-bottom: 40px;
+    }
+    &__item{
+      padding: 23px 18px;
+      width: 300px;
     }
   }
 }
