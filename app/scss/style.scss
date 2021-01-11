@@ -192,10 +192,6 @@
   transform: translateY(-50%);
   &:focus{
     outline: none;
-    transition: all .3s;
-    transform: scale(0.9) translateY(-50%);
-  }
-  &:active{
     animation: click .3s linear;
   }
 }
@@ -493,6 +489,7 @@
     font-size: 36px;
     line-height: 46px;
     color: rgba(18,30,44,0.9);
+    pointer-events: none;
   }
   &__links-item-link,
   &__social-item-link{
