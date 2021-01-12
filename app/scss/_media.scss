@@ -221,7 +221,7 @@
     }
   }
   .about{
-    padding: 30px 0 60px;
+    padding: 60px 0 100px;
     &__title{
       font-size: 26px;
       line-height: 32px;
@@ -245,7 +245,7 @@
   .portfolio{
     &__inner{
       padding-top: 35px;
-      margin-bottom: 80px;
+      margin-bottom: 100px;
     }
     &__item-title{
       font-size: 28px;
@@ -259,13 +259,13 @@
   .studio{
     &__inner{
       padding: 35px 0 0;
-      margin-bottom: 80px;
+      margin-bottom: 100px;
     }
   }
   .price{
     &__inner{
       padding-top: 35px;
-      margin-bottom: 80px;
+      margin-bottom: 100px;
       flex-direction: column;
       align-items: center;
     }
@@ -279,12 +279,12 @@
   .reviews{
     &__inner{
       padding-top: 35px;
-      margin-bottom: 80px;
+      margin-bottom: 100px;
     }
   }
   .form-box{
     &__inner{
-      margin-bottom: 80px;
+      margin-bottom: 100px;
     }
     &__img-wrapper{
       display: none;
@@ -301,7 +301,7 @@
   .contacts{
     &__inner{
       padding-top: 35px;
-      margin-bottom: 60px;
+      margin-bottom: 80px;
       flex-direction: column;
       align-items: center;
       text-align: center;
@@ -414,6 +414,7 @@
     display: none;
   }
   .about{
+    padding: 60px 0 80px;
     &__title{
       font-size: 22px;
     }
@@ -425,7 +426,7 @@
   .portfolio{
     &__inner{
       padding-top: 25px;
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
     &__item-title{
       font-size: 22px;
@@ -439,13 +440,13 @@
   .studio{
     &__inner{
       padding: 25px 0 0;
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
   }
   .price{
     &__inner{
       padding-top: 25px;
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
     &__item-title,
     &__item-price{
@@ -455,12 +456,12 @@
   .reviews{
     &__inner{
       padding-top: 25px;
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
   }
   .form-box{
     &__inner{
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
   }
   .form{
@@ -492,7 +493,7 @@
     }
     &__inner{
       padding-top: 25px;
-      margin-bottom: 25px;
+      margin-bottom: 55px;
     }
   }
   .address{
