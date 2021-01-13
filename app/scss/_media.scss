@@ -98,11 +98,6 @@
   .slick-prev{
     left: -50px;
   }
-  .portfolio{
-    &__item-slider-img{
-      height: auto;
-    }
-  }
   .price{
     &__item +.price__item{
       margin-left: 20px;
@@ -115,8 +110,11 @@
   }
   .form-box{
     &__img{
-      height: auto;
-      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+    &__img-wrapper{
+      margin-right: 35px;
     }
   }
 }
